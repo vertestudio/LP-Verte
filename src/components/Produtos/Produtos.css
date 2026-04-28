@@ -1,0 +1,62 @@
+.produtos {
+  background: var(--muted);
+  padding: 7rem 3rem 5rem;
+}
+
+.produtos__header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  margin-bottom: 3rem; max-width: 1100px; margin-left: auto; margin-right: auto;
+}
+.produtos__desc {
+  max-width: 300px; font-size: 0.85rem;
+  color: var(--muted-fg); line-height: 1.75; font-weight: 300;
+}
+
+.produtos__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem; max-width: 1100px; margin: 0 auto;
+}
+
+.prod-card__img {
+  width: 100%; aspect-ratio: 3/4; overflow: hidden;
+  margin-bottom: 1rem; background: var(--border);
+}
+.prod-card__img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.prod-card:hover .prod-card__img img,
+.prod-card:hover .prod-card__ph { transform: scale(1.04); }
+
+.prod-card__ph {
+  width: 100%; height: 100%;
+  transition: transform 0.5s ease;
+}
+.prod-card__ph--p1 { background: linear-gradient(160deg, #ddd8cc 0%, #a8b898 100%); }
+.prod-card__ph--p2 { background: linear-gradient(160deg, #e0d0bc 0%, #c07858 100%); }
+.prod-card__ph--p3 { background: linear-gradient(160deg, #e0dbd4 0%, #c0b8ac 100%); }
+.prod-card__ph--p4 { background: linear-gradient(160deg, #d4d8cc 0%, #8a9c80 100%); }
+.prod-card__ph--p5 { background: linear-gradient(160deg, #dcd4c4 0%, #c8a878 100%); }
+.prod-card__ph--p6 { background: linear-gradient(160deg, #d8d4cc 0%, #aaa49c 100%); }
+
+.prod-card__nome {
+  font-family: var(--font-serif);
+  font-size: 1.125rem; font-weight: 400; color: var(--fg); margin-bottom: 0.3rem;
+}
+.prod-card__linha {
+  font-size: 0.62rem; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--muted-fg); margin-bottom: 0.5rem;
+}
+
+.prod-card__tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.tag {
+  padding: 0.2rem 0.6rem; border: 1px solid var(--border);
+  font-size: 0.58rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted-fg);
+}
+
+@media (max-width: 768px) {
+  .produtos { padding: 4rem 1.5rem; }
+  .produtos__header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .produtos__grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+}

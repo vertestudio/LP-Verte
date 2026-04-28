@@ -1,0 +1,29 @@
+.banner-meio {
+  position: relative; padding: 7rem 3rem;
+  text-align: center; overflow: hidden;
+}
+.banner-meio__bg {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom right, #b8ad9c, #c8b89a, #a89880);
+}
+.banner-meio__bg::before {
+  content: ''; position: absolute; inset: 0;
+  background: rgba(0,0,0,0.18);
+}
+.banner-meio__content {
+  position: relative; z-index: 1;
+  max-width: 660px; margin: 0 auto;
+}
+.banner-meio__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem); font-weight: 400;
+  color: #fff; line-height: 1.1; margin-bottom: 1.4rem;
+}
+.banner-meio__sub {
+  font-size: 0.88rem; color: rgba(255,255,255,0.82);
+  font-weight: 300; line-height: 1.75; margin-bottom: 2.2rem;
+}
+
+@media (max-width: 768px) {
+  .banner-meio { padding: 5rem 1.5rem; }
+}

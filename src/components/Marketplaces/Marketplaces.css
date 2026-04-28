@@ -1,0 +1,124 @@
+.marketplaces {
+  background: var(--bg); /* opções: var(--muted) bege | var(--secondary) sage | var(--bg) branco quente */
+  padding: 7rem 3rem;
+}
+
+.marketplaces__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.marketplaces__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.marketplaces__sub {
+  max-width: 320px;
+  font-size: 0.87rem;
+  color: var(--muted-fg);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* Grid — 2 colunas, centralizado */
+.marketplaces__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  max-width: 720px; /* mantém os cards confortáveis sem esticar demais */
+}
+
+/* Card */
+.mp-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  text-decoration: none;
+  transition: border-color 0.25s, background 0.25s;
+  cursor: pointer;
+}
+
+.mp-card:hover {
+  border-color: var(--primary);
+  background: var(--bg);
+}
+
+.mp-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mp-card__nome {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--fg);
+  line-height: 1.2;
+}
+
+.mp-card__arrow {
+  font-size: 1rem;
+  color: var(--muted-fg);
+  transition: color 0.2s, transform 0.2s;
+  margin-top: 0.2rem;
+}
+
+.mp-card:hover .mp-card__arrow {
+  color: var(--primary);
+  transform: translate(2px, -2px);
+}
+
+.mp-card__desc {
+  font-size: 0.85rem;
+  color: var(--muted-fg);
+  line-height: 1.75;
+  font-weight: 300;
+  flex: 1;
+}
+
+.mp-card__tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-fg);
+  align-self: flex-start;
+}
+
+/* Nota rodapé */
+.marketplaces__note {
+  margin-top: 2.5rem;
+  font-size: 0.83rem;
+  color: var(--muted-fg);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.marketplaces__note a {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.marketplaces__note a:hover {
+  color: var(--primary);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .marketplaces { padding: 4rem 1.5rem; }
+  .marketplaces__header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .marketplaces__sub { max-width: 100%; }
+  .marketplaces__grid { grid-template-columns: 1fr; max-width: 100%; }
+}

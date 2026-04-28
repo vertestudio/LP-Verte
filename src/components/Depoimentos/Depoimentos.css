@@ -1,0 +1,32 @@
+.depoimentos {
+  background: var(--muted); padding: 7rem 3rem; text-align: center;
+}
+.depoimentos .section-title { margin-bottom: 3.5rem; }
+
+.depoimentos__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; max-width: 1100px; margin: 3rem auto 0;
+}
+
+.dep-card { background: var(--card); padding: 2.2rem; text-align: left; }
+
+.stars { display: flex; gap: 0.25rem; margin-bottom: 1.4rem; }
+.star {
+  width: 13px; height: 13px; background: var(--accent);
+  clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+}
+
+.dep-card__texto {
+  font-family: var(--font-serif);
+  font-size: 1rem; font-style: italic; font-weight: 400;
+  color: var(--fg); line-height: 1.75; margin-bottom: 1.6rem;
+  min-height: 112px;
+}
+.dep-card__divider { height: 1px; background: var(--border); margin-bottom: 1.2rem; }
+.dep-card__nome    { font-size: 0.83rem; font-weight: 500; color: var(--fg); }
+.dep-card__cidade  { font-size: 0.73rem; color: var(--muted-fg); margin-top: 0.2rem; }
+
+@media (max-width: 768px) {
+  .depoimentos { padding: 4rem 1.5rem; }
+  .depoimentos__grid { grid-template-columns: 1fr; }
+}

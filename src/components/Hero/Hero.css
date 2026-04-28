@@ -1,0 +1,156 @@
+/* ── Wrapper ── */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+  overflow: hidden;
+}
+
+.hero__swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Slide background ── */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  transition: background 0.6s ease;
+}
+
+.hero__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 68% 55%, rgba(215,195,160,0.35) 0%, transparent 58%);
+  pointer-events: none;
+}
+
+/* ── Product SVG ── */
+.hero__product {
+  position: absolute;
+  right: 6%;
+  bottom: 0;
+  width: 50%;
+  height: 92%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+}
+.hero__product svg {
+  width: 100%;
+  height: 100%;
+  max-width: 580px;
+}
+
+/* ── Text content ── */
+.hero__content {
+  position: absolute;
+  z-index: 2;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 3rem;
+  max-width: 520px;
+}
+
+.hero__eyebrow {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 1.2rem;
+}
+
+.hero__title {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 1.3rem;
+}
+
+.hero__sub {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.72);
+  margin-bottom: 2.4rem;
+}
+
+/* ── Pagination dots ── */
+.hero__pagination {
+  position: absolute;
+  bottom: 2rem!important;
+  left: 3rem!important;
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+
+  width: fit-content!important;
+}
+
+/* Override Swiper bullet styles */
+.hero__pagination .swiper-pagination-bullet {
+  width: 24px;
+  height: 2px;
+  border-radius: 0;
+  background: rgba(255,255,255,0.35);
+  opacity: 1;
+  margin: 0 !important;
+  transition: background 0.3s;
+}
+.hero__pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/* ── Prev / Next arrows ── */
+.hero__nav {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 3rem;
+  z-index: 10;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.hero__btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+.hero__btn:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.7);
+}
+
+/* Disable Swiper's default arrow styles */
+.hero__swiper .swiper-button-prev,
+.hero__swiper .swiper-button-next {
+  display: none;
+}
+
+/* ── Fade animation on content ── */
+.swiper-slide-active .hero__content {
+  animation: heroContentIn 0.7s ease both;
+}
+@keyframes heroContentIn {
+  from { opacity: 0; transform: translateY(calc(50% + 20px)); }
+  to   { opacity: 1; transform: translateY(50%); }
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .hero__product { display: none; }
+  .hero__content { left: 1.5rem; right: 1.5rem; max-width: 100%; }
+  .hero__pagination { left: 1.5rem; }
+  .hero__nav { right: 1.5rem; }
+}

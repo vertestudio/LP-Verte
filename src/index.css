@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@300;400;500&display=swap');
+
+/* ── VARIABLES ── */
+:root {
+  --bg:         #FAF8F5;
+  --fg:         #1A1D1E;
+  --primary:    #5D6D5A;
+  --primary-fg: #FAF8F5;
+  --secondary:  #BCC4AB;
+  --accent:     #C07B5D;
+  --muted:      #E2DCD4;
+  --muted-fg:   #8A8F93;
+  --border:     #D8D2CA;
+  --card:       #FAF8F5;
+  --green-dark: #28332E;
+
+  --font-serif: 'Instrument Serif', serif;
+  --font-sans:  'Archivo', sans-serif;
+}
+
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+}
+
+img   { display: block; max-width: 100%; }
+a     { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: var(--font-sans); }
+
+/* ── SHARED UTILITIES ── */
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted-fg);
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--fg);
+  line-height: 1.15;
+}
+
+.btn-outline-white {
+  display: inline-block;
+  padding: 0.85rem 2.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: background 0.25s, color 0.25s;
+}
+.btn-outline-white:hover { background: #fff; color: var(--fg); }
+
+.btn-outline-dark {
+  display: inline-block;
+  padding: 0.85rem 2.2rem;
+  border: 1px solid var(--fg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: background 0.25s, color 0.25s;
+}
+.btn-outline-dark:hover { background: var(--fg); color: var(--bg); }
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

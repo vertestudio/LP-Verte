@@ -1,0 +1,168 @@
+.contato {
+  background: var(--green-dark);
+  padding: 6rem 3rem;
+}
+
+.contato__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 5rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Left text ── */
+.contato__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+.contato__text h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.contato__text p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* ── Form ── */
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.contato__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contato__field label {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.contato__field input,
+.contato__field textarea {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 300;
+  padding: 0.9rem 1.2rem;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+.contato__field input::placeholder,
+.contato__field textarea::placeholder {
+  color: rgba(255,255,255,0.28);
+}
+
+.contato__field input:focus,
+.contato__field textarea:focus {
+  border-color: rgba(255,255,255,0.45);
+}
+
+/* Error state */
+.contato__field--error input,
+.contato__field--error textarea {
+  border-color: #e07060;
+}
+
+.contato__error {
+  font-size: 0.72rem;
+  color: #e09080;
+  margin-top: 0.1rem;
+}
+
+.contato__error--global {
+  text-align: center;
+}
+
+/* ── Submit button ── */
+.contato__submit {
+  align-self: flex-start;
+  padding: 0.9rem 2.4rem;
+  background: var(--bg);
+  border: none;
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: background 0.2s, opacity 0.2s;
+  cursor: pointer;
+}
+.contato__submit:hover:not(:disabled) {
+  background: var(--muted);
+}
+.contato__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Success state ── */
+.contato__success {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.contato__success-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.contato__success p {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.contato__reset {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.45);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+.contato__reset:hover { color: #fff; }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .contato { padding: 4rem 1.5rem; }
+  .contato__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .contato__submit { align-self: stretch; text-align: center; }
+}
