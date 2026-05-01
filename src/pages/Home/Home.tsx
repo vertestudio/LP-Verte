@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useReveal } from '../../hooks/useReaveal'
+import { useReveal } from '../../hooks/useReveal'
 import Nav from '../../components/Nav/Nav'
 import Hero from '../../components/Hero/Hero'
 import Categorias from '../../components/Categorias/Categorias'

@@ -1,19 +1,82 @@
 import type { Produto, Categoria, Depoimento, ValorMarca } from '../types'
 
 export const categorias: Categoria[] = [
-  { id: 'organiza', linha: 'Linha', nome: 'Organiza'},
-  { id: 'decora', linha: 'Linha', nome: 'Decora'},
+  {
+    id: 'organiza',
+    linha: 'Linha',
+    nome: 'Escritório',
+    slug: 'organiza',
+    // image: '/assets/images/categorias/cat-organiza.jpg',
+    banner: null,
+    bannerGradient: 'linear-gradient(145deg, #c8c4b8 0%, #a0a890 40%, #6a7c60 100%)',
+    tagline: 'Organização com design de verdade.',
+    descricao: 'Peças funcionais que transformam sua mesa e seu espaço.',
+    colecaoTitulo: 'Peças para organizar',
+  },
+  {
+    id: 'decora',
+    linha: 'Linha',
+    nome: 'Casa',
+    slug: 'decora',
+    // image: '/assets/images/categorias/cat-decora.jpg',
+    banner: null,
+    bannerGradient: 'linear-gradient(145deg, #c8b89a 0%, #c49070 40%, #8a6050 100%)',
+    tagline: 'Peças únicas que transformam ambientes com personalidade.',
+    descricao: 'Decoração impressa com cuidado, pensada para transformar.',
+    colecaoTitulo: 'Peças para decorar',
+  },
 ]
 
 export const produtos: Produto[] = [
-  { id: 1, nome: 'Porta-canetas Geo',  linha: 'Verte Organiza',    tags: ['PLA Reciclado', 'Layer: 0.2mm'],  cor: 'p1' },
-  { id: 2, nome: 'Vaso Curva',         linha: 'Verte Decora',      tags: ['PLA Silk',      'Layer: 0.16mm'], cor: 'p2' },
-  { id: 3, nome: 'Bandeja Banho',      linha: 'Verte Organiza',    tags: ['PLA Reciclado', 'Layer: 0.2mm'],  cor: 'p3' },
-  { id: 4, nome: 'Suporte Notebook',   linha: 'Verte Organiza',    tags: ['PLA Matte',     'Layer: 0.2mm'],  cor: 'p4' },
-  { id: 5, nome: 'Castiçal Orgânico',  linha: 'Verte Decora',      tags: ['PLA Silk',      'Layer: 0.12mm'], cor: 'p5' },
-  { id: 6, nome: 'Porta-joias Geo',    linha: 'Verte Acessórios',  tags: ['PLA Reciclado', 'Layer: 0.16mm'], cor: 'p6' },
+  {
+    id: 1,
+    nome: 'Porta-canetas Geo',
+    linha: 'Verte Organiza',
+    departamento: 'organiza',
+    tags: ['PLA Reciclado', 'Layer: 0.2mm'],
+    cor: 'p1',
+  },
+  {
+    id: 2,
+    nome: 'Vaso Curva',
+    linha: 'Verte Decora',
+    departamento: 'decora',
+    tags: ['PLA Silk', 'Layer: 0.16mm'],
+    cor: 'p2',
+  },
+  {
+    id: 3,
+    nome: 'Bandeja Banho',
+    linha: 'Verte Organiza',
+    departamento: 'organiza',
+    tags: ['PLA Reciclado', 'Layer: 0.2mm'],
+    cor: 'p3',
+  },
+  {
+    id: 4,
+    nome: 'Suporte Notebook',
+    linha: 'Verte Organiza',
+    departamento: 'organiza',
+    tags: ['PLA Matte', 'Layer: 0.2mm'],
+    cor: 'p4',
+  },
+  {
+    id: 5,
+    nome: 'Castiçal Orgânico',
+    linha: 'Verte Decora',
+    departamento: 'decora',
+    tags: ['PLA Silk', 'Layer: 0.12mm'],
+    cor: 'p5',
+  },
+  {
+    id: 6,
+    nome: 'Porta-joias Geo',
+    linha: 'Verte Acessórios',
+    departamento: 'organiza',
+    tags: ['PLA Reciclado', 'Layer: 0.16mm'],
+    cor: 'p6',
+  },
 ]
-
 export const depoimentos: Depoimento[] = [
   {
     id: 1,

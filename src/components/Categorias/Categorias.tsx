@@ -1,9 +1,6 @@
+import { Link } from 'react-router-dom'
+import { categorias } from '../../data'
 import './Categorias.css'
-
-const categorias = [
-    { id: 'organiza', linha: 'Linha', nome: 'Organiza' },
-    { id: 'decora', linha: 'Linha', nome: 'Decora' },
-]
 
 export default function Categorias() {
     return (
@@ -13,13 +10,24 @@ export default function Categorias() {
 
             <div className="categorias__grid">
                 {categorias.map((cat) => (
-                    <div key={cat.id} className="cat-card reveal">
-                        <div className={`cat-card__img cat-card__img--${cat.id}`} />
+                    <Link
+                        key={cat.id}
+                        to={`/departamento/${cat.slug}`}
+                        className="cat-card reveal"
+                    >
+                        <div
+                            className={`cat-card__img cat-card__img--${cat.id}`}
+                            style={
+                                cat.image
+                                    ? { backgroundImage: `url(${cat.image})` }
+                                    : undefined
+                            }
+                        />
                         <div className="cat-card__label">
                             <p>{cat.linha}</p>
                             <h3>{cat.nome}</h3>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>

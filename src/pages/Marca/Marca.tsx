@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useReveal } from '../../hooks/useReaveal'
+import { useReveal } from '../../hooks/useReveal'
 import { valoresMarca } from '../../data'
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer'
