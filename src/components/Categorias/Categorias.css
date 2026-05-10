@@ -18,14 +18,19 @@
 .cat-card__img {
   width: 100%; height: 100%;
   transition: transform 0.6s ease;
+  overflow: hidden;
 }
 .cat-card:hover .cat-card__img { transform: scale(1.04); }
 
-.cat-card__img--organiza {
-  background: linear-gradient(145deg, #c8c4b8 0%, #a0a890 40%, #6a7c60 100%);
+.cat-card__img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.cat-card__img--decora {
-  background: linear-gradient(145deg, #c8b89a 0%, #c49070 40%, #8a6050 100%);
+
+.cat-card__img {
+  background: linear-gradient(145deg, #c8c4b8 0%, #a0a890 40%, #6a7c60 100%);
+  /* ... resto */
 }
 
 /* Replace the above with real images when available:

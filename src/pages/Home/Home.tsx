@@ -31,11 +31,11 @@ export default function Home() {
             <Hero />
             <Categorias />
             <Produtos />
-            <Marketplaces />
+            {/* <Marketplaces /> */}
             <B2B />
             <BannerMeio />
-            <Sobre />
-            <Depoimentos />
+            {/* <Sobre /> */}
+            {/* <Depoimentos /> */}
             <Newsletter />
             <Footer />
         </>

@@ -8,13 +8,13 @@ const marketplaces = [
         tag: 'Entrega rápida',
         url: 'https://www.mercadolivre.com.br', // ← substitua pela URL da sua loja
     },
-    {
-        id: 'shopee',
-        nome: 'Shopee',
-        desc: 'Frete grátis em selecionados e promoções exclusivas da plataforma.',
-        tag: 'Frete grátis',
-        url: 'https://shopee.com.br', // ← substitua pela URL da sua loja
-    },
+    // {
+    //     id: 'shopee',
+    //     nome: 'Shopee',
+    //     desc: 'Frete grátis em selecionados e promoções exclusivas da plataforma.',
+    //     tag: 'Frete grátis',
+    //     url: 'https://shopee.com.br', // ← substitua pela URL da sua loja
+    // },
 ]
 
 export default function Marketplaces() {

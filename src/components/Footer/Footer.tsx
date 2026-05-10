@@ -12,12 +12,12 @@ const nav = [
 const social = [
     { label: 'Instagram', href: 'https://www.instagram.com/verte.studio/' },
     //{ label: 'Pinterest', href: '#' },
-    { label: 'TikTok', href: 'https://www.tiktok.com/@verte.studio_' },
+    { label: 'TikTok', href: 'https://www.tiktok.com/@verte.studio' },
 ]
 
 const contato = [
     { label: 'contato.vertestudio@gmail.com', href: 'mailto:contato.vertestudio@gmail.com' },
-    // { label: 'WhatsApp', href: '#' },
+    { label: 'WhatsApp', href: 'https://wa.me/5554996002205?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Verte%20%3A)' },
 ]
 
 export default function Footer() {

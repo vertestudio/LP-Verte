@@ -11,7 +11,7 @@ export interface Produto {
   nome: string
   linha: string
   departamento: Departamento
-  tags: string[]
+  tags?: string[]
   cor: string
   image?: string
 }

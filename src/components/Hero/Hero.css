@@ -21,7 +21,7 @@
 .hero__bg-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 68% 55%, rgba(215,195,160,0.35) 0%, transparent 58%);
+  background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0) 100%);
   pointer-events: none;
 }
 
