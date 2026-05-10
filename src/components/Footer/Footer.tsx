@@ -4,7 +4,7 @@ import './Footer.css'
 
 const nav = [
     { label: 'Início', href: '/#inicio' },
-    { label: 'Categorias', href: '/#categorias' },
+    { label: 'Departamentos', href: '/#departamentos' },
     { label: 'Produtos', href: '/#produtos' },
     { label: 'A Marca', href: '/marca' },
 ]

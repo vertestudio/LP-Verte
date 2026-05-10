@@ -75,7 +75,7 @@ export default function Departamento() {
 
             {/* ── Voltar ── */}
             <div className="depto-voltar">
-                <Link to="/#categorias" className="btn-outline-dark">← Ver todas as categorias</Link>
+                <Link to="/#departamentos" className="btn-outline-dark">← Ver todas os Departamentos</Link>
             </div>
 
             <Footer />
