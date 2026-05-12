@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { NomeWhiteSvg, LogoNomeWhiteSvg } from '../../assets/AssetsSvg'
+import { LogoNomeWhiteSvg } from '../../assets/AssetsSvg'
 import './Footer.css'
 
 const nav = [

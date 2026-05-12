@@ -1,4 +1,3 @@
-import React from 'react';
 
 // SVG do Nome
 export function NomeSvg() {
