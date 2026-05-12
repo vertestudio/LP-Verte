@@ -1,9 +1,9 @@
 // import { Link } from 'react-router-dom'
 import { useReveal } from '../../hooks/useReveal'
 import { valoresMarca } from '../../data'
+import { LogoNomeSvg } from '../../assets/AssetsSvg'
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer'
-import { LogoNomeSvg } from '../../assets/AssetsSvg'
 import './Marca.css'
 
 export default function Marca() {
