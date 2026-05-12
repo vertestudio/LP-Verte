@@ -82,7 +82,7 @@ export const categorias: Categoria[] = [
 export const produtos: Produto[] = [
   {
     id: 1,
-    nome: 'Porta-canetas Geo',
+    nome: 'Conjunto Bandeja + Caixinha organizadora',
     linha: 'Verte Organiza',
     departamento: 'organiza',
     image: ConjuntoBandejaImg,
@@ -91,7 +91,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 2,
-    nome: 'Vaso Curva',
+    nome: 'Conjunto Decorativo - Bandeja, Vaso, Difusor e vela',
     linha: 'Verte Decora',
     departamento: 'decora',
     image: ConjuntoDecora,
@@ -100,7 +100,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 3,
-    nome: 'Bandeja Banho',
+    nome: 'Bandeja Decorativa Moderna',
     linha: 'Verte Organiza',
     departamento: 'organiza',
     image: BandejaImg,
@@ -109,7 +109,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 4,
-    nome: 'Suporte Notebook',
+    nome: 'Suporte para copos rendado',
     linha: 'Verte Organiza',
     departamento: 'organiza',
     image: SuporteCopo,
@@ -118,7 +118,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 5,
-    nome: 'Castiçal Orgânico',
+    nome: 'Conjunto Cachepôs canelados com pés',
     linha: 'Verte Decora',
     departamento: 'decora',
     image: ConjuntoVasos,
@@ -127,7 +127,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 6,
-    nome: 'Porta-joias Geo',
+    nome: 'Suporte para celular slim',
     linha: 'Verte Organiza',
     departamento: 'organiza',
     image: SuporteCelular,
@@ -136,7 +136,7 @@ export const produtos: Produto[] = [
   },
     {
     id: 7,
-    nome: 'Castiçal Orgânico',
+    nome: 'Cachepô com suporte',
     linha: 'Verte Decora',
     departamento: 'decora',
     image: VasoComSuporte,
@@ -145,7 +145,7 @@ export const produtos: Produto[] = [
   },
     {
     id: 8,
-    nome: 'Castiçal Orgânico',
+    nome: 'Cachepô com padrão de arcos',
     linha: 'Verte Decora',
     departamento: 'decora',
     image: VasoRosca,

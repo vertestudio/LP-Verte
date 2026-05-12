@@ -25,8 +25,8 @@ export default function Produtos() {
                                 : <div className={`prod-card__ph prod-card__ph--${p.cor}`} />
                             }
                         </div>
-                        <h3 className="prod-card__nome">{p.nome}</h3>
                         <p className="prod-card__linha">{p.linha}</p>
+                        <h3 className="prod-card__nome">{p.nome}</h3>
                         {/* <div className="prod-card__tags">
                             {p.tags.map((t) => <span key={t} className="tag">{t}</span>)}
                         </div> */}
