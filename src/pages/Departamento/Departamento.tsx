@@ -37,7 +37,7 @@ export default function Departamento() {
             >
                 <div className="depto-banner__overlay" />
                 <div className="depto-banner__content">
-                    <p className="depto-banner__label">Departamento</p>
+                    <p className="depto-banner__label">Categoria</p>
                     <h1 className="depto-banner__title">Verte {categoria.id.charAt(0).toUpperCase() + categoria.id.slice(1)}</h1>
                     <p className="depto-banner__sub">{categoria.tagline}</p>
                 </div>
@@ -75,7 +75,7 @@ export default function Departamento() {
 
             {/* ── Voltar ── */}
             <div className="depto-voltar">
-                <Link to="/#departamentos" className="btn-outline-dark">← Ver todas os Departamentos</Link>
+                <Link to="/#categorias" className="btn-outline-dark">← Ver todas as Categorias</Link>
             </div>
 
             <Footer />

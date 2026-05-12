@@ -4,15 +4,15 @@ import './Categorias.css'
 
 export default function Categorias() {
     return (
-        <section id="departamentos" className="categorias">
-            <p className="section-label reveal">Departamentos</p>
+        <section id="categorias" className="categorias">
+            <p className="section-label reveal">Categorias</p>
             <h2 className="section-title reveal">Dois universos, um propósito</h2>
 
             <div className="categorias__grid">
                 {categorias.map((cat) => (
                     <Link
                         key={cat.id}
-                        to={`/departamento/${cat.slug}`}
+                        to={`/espacos/${cat.slug}`}
                         className="cat-card reveal"
                     >
                         <div className="cat-card__img">

@@ -12,7 +12,7 @@ export default function BannerMeio() {
                     Peças funcionais e decorativas, impressas em 3D com materiais sustentáveis.<br />
                     Feitas com cuidado, pensadas para transformar.
                 </p>
-                <a href="#departamentos" className="btn-outline-white">Conheça as Coleções</a>
+                <a href="#categorias" className="btn-outline-white">Conheça as Coleções</a>
             </div>
         </div>
     )

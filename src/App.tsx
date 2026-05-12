@@ -13,7 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/marca" element={<Marca />} />
-        <Route path="/departamento/:slug" element={<Departamento />} />
+        <Route path="/espacos/:slug" element={<Departamento />} />
       </Routes>
     </>
   )

@@ -82,7 +82,7 @@ export const categorias: Categoria[] = [
 export const produtos: Produto[] = [
   {
     id: 1,
-    nome: 'Conjunto Bandeja + Caixinha organizadora',
+    nome: 'Conjunto Organizador de Mesa – Bandeja + Pote com Tampa',
     linha: 'Verte Organiza',
     departamento: 'organiza',
     image: ConjuntoBandejaImg,
@@ -91,7 +91,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 2,
-    nome: 'Conjunto Decorativo - Bandeja, Vaso, Difusor e vela',
+    nome: 'Conjunto Decorativo – Bandeja, Vaso, Difusor e Suporte de Vela',
     linha: 'Verte Decora',
     departamento: 'decora',
     image: ConjuntoDecora,
@@ -100,7 +100,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 3,
-    nome: 'Bandeja Decorativa Moderna',
+    nome: 'Bandeja Organizadora de Acessórios',
     linha: 'Verte Organiza',
     departamento: 'organiza',
     image: BandejaImg,
@@ -109,7 +109,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 4,
-    nome: 'Suporte para copos rendado',
+    nome: 'Jogo de Descanso para Copos – Textura Rendada',
     linha: 'Verte Organiza',
     departamento: 'organiza',
     image: SuporteCopo,
@@ -118,7 +118,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 5,
-    nome: 'Conjunto Cachepôs canelados com pés',
+    nome: 'Conjunto de Vasos Canelados com Pés',
     linha: 'Verte Decora',
     departamento: 'decora',
     image: ConjuntoVasos,
@@ -127,7 +127,7 @@ export const produtos: Produto[] = [
   },
   {
     id: 6,
-    nome: 'Suporte para celular slim',
+    nome: 'Suporte para Celular Slim',
     linha: 'Verte Organiza',
     departamento: 'organiza',
     image: SuporteCelular,
@@ -136,7 +136,7 @@ export const produtos: Produto[] = [
   },
     {
     id: 7,
-    nome: 'Cachepô com suporte',
+    nome: 'Vaso com Suporte',
     linha: 'Verte Decora',
     departamento: 'decora',
     image: VasoComSuporte,
@@ -145,7 +145,7 @@ export const produtos: Produto[] = [
   },
     {
     id: 8,
-    nome: 'Cachepô com padrão de arcos',
+    nome: 'Vaso com Textura de Arcos',
     linha: 'Verte Decora',
     departamento: 'decora',
     image: VasoRosca,
