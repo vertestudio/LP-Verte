@@ -15,8 +15,6 @@ interface FormErrors {
 
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/SEU_ID_AQUI' // ← substitua pelo seu endpoint
-
 function validateEmail(email: string): boolean {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
@@ -38,7 +36,6 @@ export default function Newsletter() {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target
         setForm((prev) => ({ ...prev, [name]: value }))
-        // limpa o erro do campo ao digitar
         if (errors[name as keyof FormErrors]) {
             setErrors((prev) => ({ ...prev, [name]: undefined }))
         }
@@ -56,10 +53,16 @@ export default function Newsletter() {
         setStatus('loading')
 
         try {
-            const res = await fetch(FORMSPREE_ENDPOINT, {
+            const formData = new FormData()
+            formData.append('form-name', 'contato')
+            formData.append('nome', form.nome)
+            formData.append('email', form.email)
+            formData.append('mensagem', form.mensagem)
+
+            const res = await fetch('/', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-                body: JSON.stringify(form),
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData as any).toString(),
             })
 
             if (res.ok) {
@@ -94,7 +97,17 @@ export default function Newsletter() {
                             </button>
                         </div>
                     ) : (
-                        <form className="contato__form" onSubmit={handleSubmit} noValidate>
+                        <form
+                            className="contato__form"
+                            onSubmit={handleSubmit}
+                            noValidate
+                            name="contato"
+                            data-netlify="true"
+                            netlify-honeypot="bot-field"
+                        >
+                            {/* Campo oculto obrigatório para o Netlify */}
+                            <input type="hidden" name="form-name" value="contato" />
+                            <input type="hidden" name="bot-field" />
 
                             <div className={`contato__field ${errors.nome ? 'contato__field--error' : ''}`}>
                                 <label htmlFor="nome">Nome</label>
