@@ -6,10 +6,10 @@ export default function BannerMeio() {
             <div className="banner-meio__bg" />
             <div className="banner-meio__content reveal">
                 <h2 className="banner-meio__title">
-                    Onde tecnologia<br />encontra o lar
+                    Para que cada lar reflita<br /> a personalidade de quem vive nele.
                 </h2>
                 <p className="banner-meio__sub">
-                    Peças funcionais e decorativas, impressas em 3D com materiais sustentáveis.<br />
+                    Peças funcionais e decorativas, impressas em 3D.<br />
                     Feitas com cuidado, pensadas para transformar.
                 </p>
                 <a href="#categorias" className="btn-outline-white">Conheça as Coleções</a>

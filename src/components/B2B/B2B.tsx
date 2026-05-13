@@ -25,7 +25,7 @@ export default function B2B() {
 
                 <div className="b2b__left reveal">
                     <p className="b2b__label">Para empresas</p>
-                    <h2 className="b2b__title">Sua marca.<br />Nossa precisão.</h2>
+                    <h2 className="b2b__title">Aquilo que sua marca precisa</h2>
                     <p className="b2b__sub">
                         Atendemos empresas que buscam peças personalizadas — kits
                         corporativos, brindes exclusivos ou produtos com identidade

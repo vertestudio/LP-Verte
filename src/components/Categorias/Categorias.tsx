@@ -6,7 +6,7 @@ export default function Categorias() {
     return (
         <section id="categorias" className="categorias">
             <p className="section-label reveal">Categorias</p>
-            <h2 className="section-title reveal">Dois universos, um propósito</h2>
+            <h2 className="section-title reveal">Nos detalhes é onde a Verte vive.</h2>
 
             <div className="categorias__grid">
                 {categorias.map((cat) => (

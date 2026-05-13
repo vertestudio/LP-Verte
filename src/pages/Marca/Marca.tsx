@@ -18,7 +18,7 @@ export default function Marca() {
                 <LogoNomeSvg />
                 <p className="marca-hero__eyebrow reveal">Sobre a Marca</p>
                 <h1 className="marca-hero__title reveal">
-                    Uma marca para quem<br />acredita que os detalhes<br />importam
+                    Para quem<br />acredita que os detalhes<br />importam
                 </h1>
             </div>
 
@@ -27,14 +27,14 @@ export default function Marca() {
                 <div className="marca-col reveal">
                     <p className="marca-col__num">01 — Essência</p>
                     <h2>Transformar o cotidiano, com cuidado</h2>
-                    <p>A Verte nasceu da vontade de transformar o cotidiano — não apenas o aspecto visual dos lares, mas a forma como as pessoas se sentem dentro deles.</p>
+                    <p>A Verte nasceu da vontade de renovar o cotidiano, trazendo mais aconchego para os momentos que passamos em casa.</p>
                     <p>Somos uma marca que pensa em qualidade e traz inovação para o lar, com peças criadas com propósito e impressas em 3D com precisão artesanal.</p>
                 </div>
                 <div className="marca-col reveal">
                     <p className="marca-col__num">02 — Propósito</p>
-                    <h2>Facilitar, organizar, encantar</h2>
-                    <p>Facilitar e organizar o cotidiano de forma criativa e elegante — por meio de peças funcionais e bonitas, feitas com cuidado.</p>
-                    <p>Levar artigos personalizáveis, decorações únicas e inovações em impressão 3D ao lar das pessoas. Queremos que cada peça faça você sentir que a escolha valeu cada detalhe.</p>
+                    <h2>Criar espaços que abraçam a sua rotina</h2>
+                    <p>Trazer leveza para o dia a dia através de peças que equilibram beleza e utilidade, feitas para que você se sinta em casa em cada detalhe.</p>
+                    <p>Porque um espaço bonito começa nos detalhes que você escolhe.</p>
                 </div>
             </div>
 
@@ -52,11 +52,9 @@ export default function Marca() {
             {/* 04 Posicionamento */}
             <div className="marca-posicionamento">
                 <p className="marca-col__num reveal">04 — Posicionamento</p>
-                <h2 className="reveal">A escolha inteligente</h2>
+                <h2 className="reveal">Para que cada lar reflita a personalidade de quem vive nele</h2>
                 <p className="reveal">
-                    A Verte ocupa um espaço precioso no mercado: qualidade real a um preço acessível.
-                    Não somos a opção mais barata — nem a mais cara. Somos a escolha mais inteligente
-                    para quem quer personalidade no lar sem abrir mão de qualidade.
+                    Acreditamos que transformar o cotidiano através dos detalhes é o primeiro passo para criar um lar que abraça e acolhe a nossa história.
                 </p>
             </div>
 

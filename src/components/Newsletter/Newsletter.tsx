@@ -84,7 +84,7 @@ export default function Newsletter() {
                 <div className="contato__text reveal">
                     <p className="contato__label">Contato</p>
                     <h2>Fale com a Verte</h2>
-                    <p>Tem uma dúvida, sugestão ou quer saber mais sobre nossos produtos? Escreva para nós — respondemos em até 1 dia útil.</p>
+                    <p>Tem uma dúvida, sugestão ou quer saber mais sobre nossos produtos? Escreva para nós.</p>
                 </div>
 
                 <div className="contato__form-wrap reveal">
