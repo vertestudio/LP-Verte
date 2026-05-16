@@ -10,7 +10,7 @@ const nav = [
 ]
 
 const social = [
-    { label: 'Instagram', href: 'https://www.instagram.com/verte.studio/' },
+    { label: 'Instagram', href: 'https://www.instagram.com/verte.studio_/' },
     //{ label: 'Pinterest', href: '#' },
     { label: 'TikTok', href: 'https://www.tiktok.com/@verte.studio' },
 ]
