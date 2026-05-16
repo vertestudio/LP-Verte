@@ -24,12 +24,11 @@ export default function Footer() {
     return (
         <footer className="footer">
             <Link to="/" className="footer__logo"><LogoNomeWhiteSvg /></Link>
+            <div className="footer__brand">
+                <p>Uma marca para quem acredita que até os pequenos detalhes do dia a dia merecem ser bonitos.</p>
+            </div>
 
             <div className="footer__grid">
-                <div className="footer__brand">
-                    <p>Uma marca para quem acredita que até os pequenos detalhes do dia a dia merecem ser bonitos.</p>
-                </div>
-
                 <div className="footer__col">
                     <h4>Navegação</h4>
                     <ul>

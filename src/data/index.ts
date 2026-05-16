@@ -23,15 +23,15 @@ const isMobile = window.innerWidth < 768
 export const slides = [
     {
         id: 1,
-        eyebrow: 'Tecnologia & Design',
-        title: 'Feito camada\npor camada',
-        sub: 'Impressão 3D com acabamento premium.',
+        eyebrow: 'Lançamento em breve',
+        title: 'Algo bonito\nestá chegando',
+        sub: 'Uma nova forma de cuidar dos seus espaços.',
         image: isMobile ? BandejaMobileImg : BandejaImgHero,
         gradient: 'linear-gradient(130deg, #3a4832 0%, #4d6040 35%, #b8a888 65%, #ddd0b8 100%)',
     },
     {
         id: 2,
-        eyebrow: 'Verte Decora',
+        eyebrow: 'Tecnologia & Design',
         title: 'Feito camada\npor camada',
         sub: 'Beleza e função andam sempre juntas.',
         image: isMobile ? ConjuntoMobileImg : ConjuntoImg,
@@ -40,7 +40,7 @@ export const slides = [
     {
         id: 3,
         eyebrow: 'Verte Decora',
-        title: 'Feito camada\npor camada',
+        title: 'Seu espaço,\nreinventado',
         sub: 'Do detalhe ao ambiente.',
         image: isMobile ? VasoMobileImg : VasoImg,
         gradient: 'linear-gradient(130deg, #2e3c2a 0%, #404e38 35%, #a89878 65%, #ccc0a0 100%)',

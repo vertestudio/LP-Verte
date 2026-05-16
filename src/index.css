@@ -9,7 +9,7 @@
   --secondary:  #BCC4AB;
   --accent:     #C07B5D;
   --muted:      #E2DCD4;
-  --muted-fg:   #8A8F93;
+  --muted-fg:   #6F7478;
   --border:     #D8D2CA;
   --card:       #FAF8F5;
   --green-dark: #28332E;
@@ -37,6 +37,21 @@ body {
 img   { display: block; max-width: 100%; }
 a     { text-decoration: none; color: inherit; }
 button { cursor: pointer; font-family: var(--font-sans); }
+
+/* ── FOCUS VISIBLE ── */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.btn-outline-white:focus-visible,
+.btn-outline-dark:focus-visible {
+  outline-color: currentColor;
+}
+.hero__btn:focus-visible {
+  border-color: #fff;
+  outline-color: #fff;
+}
 
 /* ── SHARED UTILITIES ── */
 .section-label {
@@ -66,6 +81,7 @@ button { cursor: pointer; font-family: var(--font-sans); }
   letter-spacing: 0.18em;
   text-transform: uppercase;
   transition: background 0.25s, color 0.25s;
+  border-radius: 48px;
 }
 .btn-outline-white:hover { background: #fff; color: var(--fg); }
 
@@ -73,6 +89,7 @@ button { cursor: pointer; font-family: var(--font-sans); }
   display: inline-block;
   padding: 0.85rem 2.2rem;
   border: 1px solid var(--fg);
+  border-radius: 48px;
   color: var(--fg);
   font-family: var(--font-sans);
   font-size: 0.68rem;
@@ -91,4 +108,41 @@ button { cursor: pointer; font-family: var(--font-sans); }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+body {
+  --sb-track-color: #faf8f5;
+  --sb-thumb-color: #bcc4ab;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+/* ── REDUCED MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .swiper-slide-active .hero__content { animation: none; }
+  .hero__bg { transition: none; }
 }

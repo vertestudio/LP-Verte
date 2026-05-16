@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { NomeSvg } from '../../assets/AssetsSvg'
+import { NomeSvg, LogoNomeSvg } from '../../assets/AssetsSvg'
 import './Nav.css'
 
 export default function Nav() {
@@ -25,7 +25,7 @@ export default function Nav() {
             {/* Mobile overlay menu */}
             <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                 <div className="mobile-menu-top">
-                    <Link to="/" className="mobile-menu-logo" onClick={close}><NomeSvg /></Link>
+                    <Link to="/" className="mobile-menu-logo" onClick={close}><LogoNomeSvg /></Link>
                     <button className="mobile-menu-close" onClick={close}>✕</button>
                 </div>
                 <ul className="mobile-menu-links">

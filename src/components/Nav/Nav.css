@@ -2,10 +2,11 @@
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
   padding: 1.2rem 3rem;
-  background: rgba(250, 248, 245, 0.93);
+  background: #ffffff;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   transition: box-shadow 0.3s;
+  border-radius: 0 0 14px 14px;
 }
 .nav--scrolled { box-shadow: 0 2px 24px rgba(0, 0, 0, 0.07); }
 

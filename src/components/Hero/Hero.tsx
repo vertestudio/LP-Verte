@@ -15,21 +15,22 @@ export default function Hero() {
                 modules={[Autoplay, EffectFade, Pagination, Navigation]}
                 effect="fade"
                 loop={true}
-                autoplay={{ delay: 5000, disableOnInteraction: false }}
+                autoplay={{ delay: 10000, disableOnInteraction: false }}
                 pagination={{ clickable: true, el: '.hero__pagination' }}
                 navigation={{ prevEl: '.hero__btn--prev', nextEl: '.hero__btn--next' }}
                 className="hero__swiper"
             >
                 {slides.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <div
-                            className="hero__bg"
-                            style={{
-                                background: slide.image
-                                    ? `url(${slide.image}) center/cover no-repeat`
-                                    : slide.gradient,
-                            }}
-                        />
+                        {slide.image
+                            ? <img
+                                className="hero__bg"
+                                src={slide.image}
+                                alt=""
+                                loading={slide.id === 1 ? "eager" : "lazy"}
+                              />
+                            : <div className="hero__bg" style={{ background: slide.gradient }} />
+                        }
                         <div className="hero__bg-overlay" />
                         <div className="hero__content">
                             <p className="hero__eyebrow">{slide.eyebrow}</p>
