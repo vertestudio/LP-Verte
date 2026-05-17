@@ -24,7 +24,7 @@ export const slides = [
     {
         id: 1,
         eyebrow: 'Lançamento em breve',
-        title: 'Algo bonito\nestá chegando',
+        title: 'Algo incrível\nestá chegando',
         sub: 'Uma nova forma de cuidar dos seus espaços.',
         image: isMobile ? BandejaMobileImg : BandejaImgHero,
         gradient: 'linear-gradient(130deg, #3a4832 0%, #4d6040 35%, #b8a888 65%, #ddd0b8 100%)',
