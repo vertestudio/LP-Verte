@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./SeoSection.css";
 
 export function SeoSection() {
     const [expanded, setExpanded] = useState(false);
+    const [isMobile, setIsMobile] = useState(
+        () => window.matchMedia("(max-width: 1024px)").matches
+    );
+
+    useEffect(() => {
+        const mq = window.matchMedia("(max-width: 1024px)");
+        const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+        mq.addEventListener("change", handler);
+        return () => mq.removeEventListener("change", handler);
+    }, []);
 
     return (
         <section className="seo-wrapper">
@@ -16,14 +26,14 @@ export function SeoSection() {
                 bandejas e muito mais.
             </p>
 
-            <div className={`seo-extra-box reveal${expanded ? " seo-extra-box--expanded" : ""}`}>
+            <div className={`seo-extra-box${isMobile ? "" : " reveal"}${expanded ? " seo-extra-box--expanded" : ""}`}>
                 <p className="seo-extra">
                     Todas as nossas peças são fabricadas artesanalmente por meio da impressão 3D, utilizando materiais de alta qualidade e atenção aos detalhes. Cada peça é projetada para quem valoriza um ambiente com personalidade. Design exclusivo e entrega para todo o Brasil
                 </p>
             </div>
 
             <button
-                className={`seo-toggle reveal${expanded ? " seo-toggle--open" : ""}`}
+                className={`seo-toggle${isMobile ? "" : " reveal"}${expanded ? " seo-toggle--open" : ""}`}
                 onClick={() => setExpanded((prev) => !prev)}
                 aria-expanded={expanded}
             >

@@ -20,12 +20,19 @@ export default function Nav() {
 
     const close = () => setMenuOpen(false)
 
+    const handleLogoClick = (e: React.MouseEvent) => {
+        if (window.location.pathname === '/') {
+            e.preventDefault()
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+    }
+
     return (
         <>
             {/* Mobile overlay menu */}
             <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                 <div className="mobile-menu-top">
-                    <Link to="/" className="mobile-menu-logo" onClick={close}><LogoNomeSvg /></Link>
+                    <Link to="/" className="mobile-menu-logo" onClick={(e) => { close(); handleLogoClick(e) }}><LogoNomeSvg /></Link>
                     <button className="mobile-menu-close" onClick={close}>✕</button>
                 </div>
                 <ul className="mobile-menu-links">
@@ -42,7 +49,7 @@ export default function Nav() {
 
             {/* Main nav */}
             <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
-                <Link to="/" className="nav-logo"><NomeSvg /></Link>
+                <Link to="/" className="nav-logo" onClick={handleLogoClick}><NomeSvg /></Link>
                 <ul className="nav-links">
                     <li><a href="/#inicio">Início</a></li>
                     <li><a href="/#categorias">Categorias</a></li>
