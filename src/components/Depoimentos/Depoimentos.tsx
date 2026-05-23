@@ -14,7 +14,7 @@ function Stars() {
 export default function Depoimentos() {
     return (
         <section id="depoimentos" className="depoimentos">
-            <p className="section-label reveal">Depoimentos</p>
+            <span className="section-label reveal">Depoimentos</span>
             <h2 className="section-title reveal">O que dizem sobre nós</h2>
 
             <div className="depoimentos__grid">

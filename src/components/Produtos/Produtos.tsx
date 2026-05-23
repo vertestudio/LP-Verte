@@ -7,7 +7,7 @@ export default function Produtos() {
         <section id="produtos" className="produtos">
             <div className="produtos__header reveal">
                 <div>
-                    <p className="section-label">Coleção</p>
+                    <span className="section-label">Coleção</span>
                     <h2 className="section-title">Peças em destaque</h2>
                 </div>
                 <p className="produtos__desc">

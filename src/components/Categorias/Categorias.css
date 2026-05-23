@@ -45,7 +45,7 @@
   position: absolute; bottom: 1.5rem; left: 1.5rem; display: flex; flex-direction: column; gap: 4px;
 }
 .cat-card__label p {
-  font-size: 0.65rem; letter-spacing: 0.14em;
+  font-size: 0.75rem; letter-spacing: 0.14em;
   text-transform: uppercase; color: rgba(255,255,255,0.78);
   text-align: left;
 }

@@ -39,6 +39,7 @@
 .marca-col__num {
   font-size: 0.65rem; letter-spacing: 0.22em;
   text-transform: uppercase; color: var(--accent); margin-bottom: 1.4rem;
+  font-weight: 400;
 }
 .marca-col h2 {
   font-family: var(--font-serif);
@@ -57,6 +58,7 @@
 .marca-valores__label {
   font-size: 0.65rem; letter-spacing: 0.22em;
   text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;
+  font-weight: 400;
 }
 .marca-valores__title {
   font-family: var(--font-serif);

@@ -14,7 +14,7 @@
 
 /* ── Left ── */
 .b2b__label {
-  font-size: 0.65rem;
+  font-size: 0.765rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--secondary);
@@ -31,7 +31,7 @@
 }
 
 .b2b__sub {
-  font-size: 0.87rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.52);
   font-weight: 300;
   line-height: 1.85;
@@ -45,7 +45,7 @@
   border-radius: 48px;
   color: #fff;
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   text-decoration: none;
@@ -83,7 +83,7 @@
 }
 
 .b2b__item h4 {
-  font-size: 0.88rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #fff;
   margin-bottom: 0.35rem;
@@ -91,7 +91,7 @@
 }
 
 .b2b__item p {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.45);
   font-weight: 300;
   line-height: 1.7;

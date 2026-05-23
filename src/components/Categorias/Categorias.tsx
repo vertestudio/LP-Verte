@@ -5,7 +5,7 @@ import './Categorias.css'
 export default function Categorias() {
     return (
         <section id="categorias" className="categorias">
-            <p className="section-label reveal">Categorias</p>
+            <span className="section-label reveal">Categorias</span>
             <h2 className="section-title reveal">Nos detalhes é onde a Verte vive.</h2>
 
             <div className="categorias__grid">

@@ -30,7 +30,7 @@ export default function Footer() {
 
             <div className="footer__grid">
                 <div className="footer__col">
-                    <h4>Navegação</h4>
+                    <h2>Navegação</h2>
                     <ul>
                         {nav.map((item) => (
                             <li key={item.label}>
@@ -44,7 +44,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footer__col">
-                    <h4>Redes Sociais</h4>
+                    <h2>Redes Sociais</h2>
                     <ul>
                         {social.map((item) => (
                             <li key={item.label}><a href={item.href}>{item.label}</a></li>
@@ -53,7 +53,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footer__col">
-                    <h4>Contato</h4>
+                    <h2>Contato</h2>
                     <ul>
                         {contato.map((item) => (
                             <li key={item.label}><a href={item.href}>{item.label}</a></li>

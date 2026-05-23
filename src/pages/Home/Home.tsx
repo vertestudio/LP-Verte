@@ -1,5 +1,8 @@
 import { useEffect } from 'react'
 import { useReveal } from '../../hooks/useReveal'
+import { produtos } from '../../data'
+import { JsonLd } from '../../components/JsonLd/JsonLd'
+import { organizationSchema, productSchema } from '../../data/schemas'
 import Nav from '../../components/Nav/Nav'
 import Hero from '../../components/Hero/Hero'
 import Categorias from '../../components/Categorias/Categorias'
@@ -9,11 +12,17 @@ import B2B from '../../components/B2B/B2B'
 import BannerMeio from '../../components/BannerMeio/BannerMeio'
 // import Sobre from '../../components/Sobre/Sobre'
 // import Depoimentos from '../../components/Depoimentos/Depoimentos'
+import { SeoSection } from "../../components/SeoSection/SeoSection";
 import Newsletter from '../../components/Newsletter/Newsletter'
 import Footer from '../../components/Footer/Footer'
 
 export default function Home() {
     useReveal()
+
+    const schemas = [
+        organizationSchema(),
+        ...produtos.map((p) => productSchema(p)),
+    ]
 
     // Scroll para âncora quando chega via link (ex: /#produtos)
     useEffect(() => {
@@ -27,6 +36,7 @@ export default function Home() {
 
     return (
         <>
+            <JsonLd data={schemas} />
             <Nav />
             <Hero />
             <Categorias />
@@ -36,6 +46,7 @@ export default function Home() {
             <BannerMeio />
             {/* <Sobre /> */}
             {/* <Depoimentos /> */}
+            <SeoSection />
             <Newsletter />
             <Footer />
         </>

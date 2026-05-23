@@ -1,6 +1,8 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { useReveal } from '../../hooks/useReveal'
 import { categorias, produtos } from '../../data'
+import { JsonLd } from '../../components/JsonLd/JsonLd'
+import { organizationSchema, productSchema, breadcrumbSchema } from '../../data/schemas'
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer'
 import type { Departamento as DepartamentoType } from '../../types'
@@ -22,8 +24,20 @@ export default function Departamento() {
         (p) => p.departamento === slug
     )
 
+    const bf = [
+        { name: "Home", url: "/" },
+        { name: `Verte ${categoria.nome}`, url: `/espacos/${categoria.slug}` },
+    ]
+
+    const schemas = [
+        organizationSchema(),
+        breadcrumbSchema(bf),
+        ...produtosDoDepartamento.map((p) => productSchema(p)),
+    ]
+
     return (
         <>
+            <JsonLd data={schemas} />
             <Nav />
 
             {/* ── Banner ── */}

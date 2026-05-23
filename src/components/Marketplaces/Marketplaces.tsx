@@ -24,7 +24,7 @@ export default function Marketplaces() {
 
                 <div className="marketplaces__header reveal">
                     <div>
-                        <p className="section-label">Onde comprar</p>
+                        <span className="section-label">Onde comprar</span>
                         <h2 className="section-title">Encontre a Verte nos<br />melhores marketplaces</h2>
                     </div>
                     <p className="marketplaces__sub">

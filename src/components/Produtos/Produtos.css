@@ -8,7 +8,7 @@
   margin-bottom: 3rem; max-width: 1100px; margin-left: auto; margin-right: auto;
 }
 .produtos__desc {
-  max-width: 300px; font-size: 0.85rem;
+  max-width: 300px; font-size: 0.875rem;
   color: var(--muted-fg); line-height: 1.75; font-weight: 300;
 }
 
@@ -45,7 +45,7 @@
   font-size: 1.125rem; font-weight: 400; color: var(--fg); margin-bottom: 0.5rem;
 }
 .prod-card__linha {
-  font-size: 0.62rem; letter-spacing: 0.16em;
+  font-size: 0.75rem; letter-spacing: 0.16em;
   text-transform: uppercase; color: var(--muted-fg); margin-bottom: 0.3rem;
 }
 
