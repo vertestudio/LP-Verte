@@ -7,7 +7,7 @@ import Nav from '../../components/Nav/Nav'
 import Hero from '../../components/Hero/Hero'
 import Categorias from '../../components/Categorias/Categorias'
 import Produtos from '../../components/Produtos/Produtos'
-// import Marketplaces from '../../components/Marketplaces/Marketplaces'
+import Marketplaces from '../../components/Marketplaces/Marketplaces'
 import B2B from '../../components/B2B/B2B'
 import BannerMeio from '../../components/BannerMeio/BannerMeio'
 // import Sobre from '../../components/Sobre/Sobre'
@@ -41,7 +41,7 @@ export default function Home() {
             <Hero />
             <Categorias />
             <Produtos />
-            {/* <Marketplaces /> */}
+            <Marketplaces />
             <B2B />
             <BannerMeio />
             {/* <Sobre /> */}

@@ -39,7 +39,7 @@ export default function Nav() {
                     <li><a href="/#inicio" onClick={close}>Início</a></li>
                     <li><a href="/#categorias" onClick={close}>Categorias</a></li>
                     <li><a href="/#produtos" onClick={close}>Produtos</a></li>
-                    {/* <li><a href="/#onde-comprar" onClick={close}>Onde comprar</a></li> */}
+                    <li><a href="/#onde-comprar" onClick={close}>Onde comprar</a></li>
                     <li><a href="/#empresas" onClick={close}>Empresas</a></li>
                     {/* <li><a href="/#sobre" onClick={close}>Sobre</a></li> */}
                     {/* <li><a href="/#depoimentos" onClick={close}>Depoimentos</a></li> */}
@@ -54,7 +54,7 @@ export default function Nav() {
                     <li><a href="/#inicio">Início</a></li>
                     <li><a href="/#categorias">Categorias</a></li>
                     <li><a href="/#produtos">Produtos</a></li>
-                    {/* <li><a href="/#onde-comprar">Onde comprar</a></li> */}
+                    <li><a href="/#onde-comprar">Onde comprar</a></li>
                     <li><a href="/#empresas">Empresas</a></li>
                     {/* <li><a href="/#sobre">Sobre</a></li> */}
                     {/* <li><a href="/#depoimentos">Depoimentos</a></li> */}
